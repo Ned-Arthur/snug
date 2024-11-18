@@ -14,6 +14,7 @@
 
 int main(int argc, char *argv[])
 {
+	// Flag status holders
 	int noNewline = 0;
 
 	for (int i = 1; i < argc; i++)
