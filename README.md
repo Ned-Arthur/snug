@@ -1,4 +1,4 @@
-# snug
+# SNUG
 
 SNUG's not Unix or Gnu!
 The aim of snug is to recreate most of the UNIX Utility Programs and/or GNU coreutils.
