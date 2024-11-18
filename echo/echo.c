@@ -1,3 +1,14 @@
+/* echo.c
+ * A recreation of the echo bash command, with a few improvements:
+ * -n can now be used anywhere
+ * The binary is now less than half the size
+ *
+ * And some missing features:
+ * Escape sequences etc.
+ *
+ * Created by Ned Murry 18/11/2024
+ */
+
 #include <stdio.h>
 #include <string.h>
 
@@ -10,6 +21,7 @@ int main(int argc, char *argv[])
 		// strcmp returns 0 if the args match
 		if (strcmp(argv[i],"-n") == 0)
 		{
+			// If the argument is "-n" then set the flag and go to the next arg
 			noNewline = 1;
 			continue;
 		}
